@@ -46,13 +46,14 @@
                                         <span>{{ __('messages.nav.company') }}</span><svg :class="{'rotate-180': mobileSubMenuOpen === 'company'}" class="w-5 h-5 transition-transform" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
                                     </button>
                                     <div x-show="mobileSubMenuOpen === 'company'" x-collapse.duration.300ms class="pl-8 pt-2 flex flex-col gap-y-1 text-base border-l border-glass-border ml-6">
-                                         <a href="#" class="block py-2 text-text-secondary hover:text-primary-light transition-colors">{{ __('messages.nav.company_dropdown.our_story') }}</a>
-                                         <a href="#" class="block py-2 text-text-secondary hover:text-primary-light transition-colors">{{ __('messages.nav.company_dropdown.our_team') }}</a>
-                                         <a href="#" class="block py-2 text-text-secondary hover:text-primary-light transition-colors">{{ __('messages.nav.company_dropdown.projects') }}</a>
-                                         <a href="#" class="block py-2 text-text-secondary hover:text-primary-light transition-colors">{{ __('messages.nav.company_dropdown.blog') }}</a>
-                                         <a href="#" class="block py-2 text-text-secondary hover:text-primary-light transition-colors">{{ __('messages.nav.company_dropdown.events') }}</a>
-                                         <a href="#" class="block py-2 text-text-secondary hover:text-primary-light transition-colors">{{ __('messages.nav.company_dropdown.partners') }}</a>
-                                         <a href="#" class="block py-2 text-text-secondary hover:text-primary-light transition-colors">{{ __('messages.nav.company_dropdown.careers') }}</a>
+                                         {{-- <a href="#" class="block py-2 text-text-secondary hover:text-primary-light transition-colors">{{ __('messages.nav.company_dropdown.our_story') }}</a> --}}
+                                         {{-- <a href="#" class="block py-2 text-text-secondary hover:text-primary-light transition-colors">{{ __('messages.nav.company_dropdown.our_team') }}</a> --}}
+                                         {{-- <a href="#" class="block py-2 text-text-secondary hover:text-primary-light transition-colors">{{ __('messages.nav.company_dropdown.projects') }}</a> --}}
+                                          <a href="{{route('about')}}" class="block py-2 text-text-secondary hover:text-primary-light transition-colors">{{ __('messages.nav.company_dropdown.about') }}</a>
+                                         <a href="{{route('blog.index')}}" class="block py-2 text-text-secondary hover:text-primary-light transition-colors">{{ __('messages.nav.company_dropdown.blog') }}</a>
+                                         <a href="{{route("company-events.index")}}" class="block py-2 text-text-secondary hover:text-primary-light transition-colors">{{ __('messages.nav.company_dropdown.events') }}</a>
+                                         {{-- <a href="#" class="block py-2 text-text-secondary hover:text-primary-light transition-colors">{{ __('messages.nav.company_dropdown.partners') }}</a> --}}
+                                         <a href="{{route('careers.index')}}" class="block py-2 text-text-secondary hover:text-primary-light transition-colors">{{ __('messages.nav.company_dropdown.careers') }}</a>
                                     </div>
                                 </div>
                                 <a href="{{ route('education') }}" class="block px-4 py-3 rounded-md text-text-secondary hover:bg-white/10 hover:text-white transition-colors">{{ __('messages.nav.education') }}</a>
