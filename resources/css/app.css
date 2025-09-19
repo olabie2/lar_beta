@@ -1,0 +1,96 @@
+@import 'tailwindcss';
+
+/* Your Existing Content Sources */
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+/* Preline UI */
+@source "../../node_modules/preline/dist/*.js";
+@import "../../node_modules/preline/variants.css";
+
+/* Plugins */
+@plugin "@tailwindcss/forms";
+
+/* --- START: HOPn Theme Configuration --- */
+@theme {
+    /* Fonts */
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+    /* 
+    |--------------------------------------------------------------------------
+    | Colors
+    |--------------------------------------------------------------------------
+    | Define your application's color palette as CSS custom properties.
+    | You will use these in your Blade files like: `bg-[--color-primary-indigo]`
+    */
+    --color-primary-indigo: #4f46e5;
+    --color-primary-dark: #3730a3;
+    --color-primary-light: #6366f1;
+    --color-accent-purple: #7c3aed;
+    --color-accent-pink: #ec4899;
+    --color-bg-dark: #0f0f23;
+    --color-bg-card: rgba(255, 255, 255, 0.05);
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #a1a1aa;
+    --color-glass-bg: rgba(255, 255, 255, 0.1);
+    --color-glass-border: rgba(255, 255, 255, 0.2);
+
+    /* 
+    |--------------------------------------------------------------------------
+    | Animations
+    |--------------------------------------------------------------------------
+    | Define keyframes and the animation utilities.
+    | Use them in Blade like: `animate-[--animation-glow]`
+    */
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(50px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes glow {
+        from { filter: brightness(1); }
+        to { filter: brightness(1.2); }
+    }
+    @keyframes float {
+        0%, 100% { transform: translate(-50%, -50%) rotate(0deg); }
+        50% { transform: translate(-50%, -50%) rotate(180deg); }
+    }
+    @keyframes pulse {
+        0%, 100% { box-shadow: 0 0 20px rgba(79, 70, 229, 0.5); }
+        50% { box-shadow: 0 0 30px rgba(79, 70, 229, 0.8); }
+    }
+
+    --animation-fade-in-up: fadeInUp 1s ease-out forwards;
+    --animation-glow: glow 2s ease-in-out infinite alternate;
+    --animation-float: float 20s ease-in-out infinite;
+    --animation-pulse: pulse 2s ease-in-out infinite;
+}
+/* --- END: HOPn Theme Configuration --- */
+
+
+/*
+|--------------------------------------------------------------------------
+| Custom Component Styles
+|--------------------------------------------------------------------------
+| Define reusable component classes using the @apply directive.
+*/
+.cta-btn {
+  @apply px-8 py-3 rounded-full text-base font-semibold transition-all duration-300 relative overflow-hidden cursor-pointer;
+}
+.cta-btn.primary {
+  @apply bg-gradient-to-r from-[--color-primary-indigo] to-[--color-accent-purple] text-white;
+}
+.cta-btn.secondary {
+  @apply bg-[--color-glass-bg] text-[--color-text-primary] ;
+}
+.cta-btn:hover {
+  @apply -translate-y-1 shadow-2xl shadow-[--color-primary-indigo]/30;
+}
+.cta-btn::before {
+  content: '';
+  @apply absolute top-0 start-[-100%] w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-all duration-500;
+}
+.cta-btn:hover::before {
+  @apply start-[100%];
+}

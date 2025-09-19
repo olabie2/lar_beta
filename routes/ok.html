@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOPn - Responsive Header Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'hopn-indigo': '#4f46e5',
+                        'hopn-indigo-dark': '#3730a3',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <div class="text-2xl font-bold text-hopn-indigo">
+                        HOP<span class="text-gray-800">n</span>
+                    </div>
+                    <div class="ml-2 text-xs text-gray-500 hidden sm:block">Hop into Innovation</div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-hopn-indigo transition-colors duration-200 font-medium">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-hopn-indigo transition-colors duration-200 font-medium">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-hopn-indigo transition-colors duration-200 font-medium">Services</a>
+                    <a href="#ai-agents" class="text-gray-700 hover:text-hopn-indigo transition-colors duration-200 font-medium">AI Agents</a>
+                    <a href="#projects" class="text-gray-700 hover:text-hopn-indigo transition-colors duration-200 font-medium">Projects</a>
+                    <a href="#education" class="text-gray-700 hover:text-hopn-indigo transition-colors duration-200 font-medium">Education</a>
+                    <a href="#events" class="text-gray-700 hover:text-hopn-indigo transition-colors duration-200 font-medium">Events</a>
+                    <a href="#contact" class="text-gray-700 hover:text-hopn-indigo transition-colors duration-200 font-medium">Contact</a>
+                </nav>
+
+                <!-- Language Switcher & CTA -->
+                <div class="flex items-center space-x-4">
+                    <!-- Language Switcher -->
+                    <div class="flex items-center space-x-1 text-sm">
+                        <button onclick="switchLanguage('en')" class="language-btn px-2 py-1 rounded hover:bg-gray-100 transition-colors duration-200 text-hopn-indigo font-medium" data-lang="en">EN</button>
+                        <span class="text-gray-300">|</span>
+                        <button onclick="switchLanguage('de')" class="language-btn px-2 py-1 rounded hover:bg-gray-100 transition-colors duration-200 text-gray-600" data-lang="de">DE</button>
+                        <span class="text-gray-300">|</span>
+                        <button onclick="switchLanguage('ar')" class="language-btn px-2 py-1 rounded hover:bg-gray-100 transition-colors duration-200 text-gray-600" data-lang="ar">AR</button>
+                    </div>
+
+                    <!-- CTA Button -->
+                    <button class="hidden md:block bg-hopn-indigo text-white px-4 py-2 rounded-lg hover:bg-hopn-indigo-dark transition-colors duration-200 font-medium">
+                        Request Demo
+                    </button>
+
+                    <!-- Mobile Menu Button -->
+                    <button onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-md text-gray-700 hover:text-hopn-indigo hover:bg-gray-100 transition-colors duration-200">
+                        <svg id="menu-icon" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg id="close-icon" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-gray-200">
+            <div class="px-4 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-hopn-indigo hover:bg-gray-50 rounded-md transition-colors duration-200">Home</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-hopn-indigo hover:bg-gray-50 rounded-md transition-colors duration-200">About</a>
+                <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-hopn-indigo hover:bg-gray-50 rounded-md transition-colors duration-200">Services</a>
+                <a href="#ai-agents" class="block px-3 py-2 text-gray-700 hover:text-hopn-indigo hover:bg-gray-50 rounded-md transition-colors duration-200">AI Agents</a>
+                <a href="#projects" class="block px-3 py-2 text-gray-700 hover:text-hopn-indigo hover:bg-gray-50 rounded-md transition-colors duration-200">Projects</a>
+                <a href="#education" class="block px-3 py-2 text-gray-700 hover:text-hopn-indigo hover:bg-gray-50 rounded-md transition-colors duration-200">Education</a>
+                <a href="#events" class="block px-3 py-2 text-gray-700 hover:text-hopn-indigo hover:bg-gray-50 rounded-md transition-colors duration-200">Events</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-hopn-indigo hover:bg-gray-50 rounded-md transition-colors duration-200">Contact</a>
+                <div class="pt-2 border-t border-gray-200">
+                    <button class="w-full text-left bg-hopn-indigo text-white px-3 py-2 rounded-md hover:bg-hopn-indigo-dark transition-colors duration-200">
+                        Request Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Demo Content -->
+    <main class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">HOPn - Hop into Innovation</h1>
+            <p class="text-xl text-gray-600 mb-8">Experience our responsive header design with language switching</p>
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <h2 class="text-2xl font-semibold mb-4">Header Features:</h2>
+                <ul class="text-left space-y-2 max-w-md mx-auto">
+                    <li>✅ Sticky navigation that stays on top</li>
+                    <li>✅ Language switcher (EN | DE | AR)</li>
+                    <li>✅ Responsive mobile menu</li>
+                    <li>✅ Clean indigo blue branding</li>
+                    <li>✅ Smooth hover animations</li>
+                    <li>✅ Professional typography</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        let currentLanguage = 'en';
+        let mobileMenuOpen = false;
+
+        function switchLanguage(lang) {
+            currentLanguage = lang;
+            
+            // Update active language button
+            document.querySelectorAll('.language-btn').forEach(btn => {
+                if (btn.dataset.lang === lang) {
+                    btn.classList.add('text-hopn-indigo', 'font-medium');
+                    btn.classList.remove('text-gray-600');
+                } else {
+                    btn.classList.remove('text-hopn-indigo', 'font-medium');
+                    btn.classList.add('text-gray-600');
+                }
+            });
+
+            // Handle RTL for Arabic
+            if (lang === 'ar') {
+                document.documentElement.setAttribute('dir', 'rtl');
+                document.documentElement.setAttribute('lang', 'ar');
+            } else {
+                document.documentElement.setAttribute('dir', 'ltr');
+                document.documentElement.setAttribute('lang', lang);
+            }
+
+            // Here you would typically load different content/translations
+            console.log(`Language switched to: ${lang}`);
+        }
+
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            const closeIcon = document.getElementById('close-icon');
+            
+            mobileMenuOpen = !mobileMenuOpen;
+            
+            if (mobileMenuOpen) {
+                mobileMenu.classList.remove('hidden');
+                menuIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            }
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (mobileMenuOpen) {
+                    toggleMobileMenu();
+                }
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (mobileMenuOpen && !e.target.closest('header')) {
+                toggleMobileMenu();
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97ffd49ac4a3f486',t:'MTc1ODAyMDExNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
