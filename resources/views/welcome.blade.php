@@ -15,7 +15,7 @@
             </p>
 
             <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 animate-[fade-in-up_1s_ease-out_0.9s_both]">
-                <a href="#" class="cta-btn primary bg-[#ffffff1a]">
+                <a href="{{route('ai-agents')}}" class="cta-btn primary bg-[#ffffff1a]">
                     {{ __('messages.home.hero.cta_primary') }}
                 </a>
                 <a href="/request-demo" class="cta-btn secondary text-white bg-gradient-to-br from-indigo-600 to-purple-600">
