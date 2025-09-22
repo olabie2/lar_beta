@@ -20,7 +20,7 @@ Route::group(
         'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']
     ],
     function () {
-        /** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
+  
         Route::get('/', [HomeController::class, 'index'])->name('home');
         Route::get('/about', [AboutController::class, 'index'])->name('about');
         Route::get('/ai-agents', [AiAgentsController::class, 'index'])->name('ai-agents');
@@ -47,3 +47,8 @@ Route::group(
     }
 );
 Route::post('/careers/{career}/apply', [JobApplicationController::class, 'store'])->name('careers.apply');
+Route::post('/request-demo', [DemoController::class, 'store'])->name('request-demo.store');
+
+Route::get('/privacy-policy', function () {
+    return view('privacy-policy');
+})->name('privacy.policy');

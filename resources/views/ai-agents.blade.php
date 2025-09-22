@@ -51,7 +51,7 @@
         <header class="py-8 text-center">
             <div class="max-w-7xl mx-auto px-4">
                 {{-- Updated logo text gradient --}}
-                <h1 class="text-4xl font-black bg-gradient-to-r py-5 text-primary-indigo drop-shadow-lg animate-pulse">
+                <h1 class="text-4xl font-black py-5 text-primary-indigo ">
                     {{ __('ai-agents.logo') }}
                 </h1>
             </div>
@@ -75,9 +75,9 @@
         <section class="py-16 px-4 mb-16">
             <div class="max-w-6xl mx-auto">
                 {{-- Updated card style to be solid, matching the reference --}}
-                <div class="bg-gray-800 border border-gray-700 rounded-3xl p-8 md:p-16 shadow-2xl">
+                <div class="bg-gray-800 border border-gray-700 rounded-3xl p-8 md:p-16 shadow-2xl text-primary-indigo ">
                     {{-- Updated text gradient --}}
-                    <h2 class="text-4xl md:text-5xl font-black text-center mb-12 bg-gradient-to-r from-purple-400 to-pink-500 text-gradient">
+                    <h2 class="text-4xl md:text-5xl font-black text-center mb-12 bg-gradient-to-r ">
                         {{ __('ai-agents.purpose_title') }}
                     </h2>
                     <div class="text-lg text-gray-300 max-w-4xl mx-auto text-center space-y-6 leading-relaxed">
