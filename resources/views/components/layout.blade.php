@@ -30,9 +30,10 @@
         </main>
 
         <!-- Footer (You can create a x-footer component similarly) -->
-        <footer class="bg-black/30 border-t border-glass-border text-center p-8 mt-auto">
+        {{-- <footer class="bg-black/30 border-t border-glass-border text-center p-8 mt-auto">
             <p class="text-text-secondary">&copy; {{ date('Y') }} HOPn. {{ __('messages.footer.rights_reserved') }}</p>
-        </footer>
+        </footer> --}}
+        <x-footer/>
     </div>
 
   
