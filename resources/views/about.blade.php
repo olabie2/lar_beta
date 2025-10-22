@@ -123,25 +123,25 @@
         </div>
         <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-4">
             <li>
-                <img class="aspect-[3/4] w-full rounded-2xl object-cover" src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <img class="aspect-[3/4] w-full rounded-2xl object-cover" src="https://via.placeholder.com/600x800.png/1F2937/FFFFFF?text=?" alt="Placeholder image for a team member">
                 <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">{{ __('about-us.team_member_1_name') }}</h3>
                 <p class="text-base leading-7 text-indigo-400">{{ __('about-us.team_member_1_title') }}</p>
                 <p class="text-sm leading-6 text-gray-400">{{ __('about-us.team_member_1_bio') }}</p>
             </li>
             <li>
-                <img class="aspect-[3/4] w-full rounded-2xl object-cover" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <img class="aspect-[3/4] w-full rounded-2xl object-cover" src="https://via.placeholder.com/600x800.png/1F2937/FFFFFF?text=?" alt="Placeholder image for a team member">
                 <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">{{ __('about-us.team_member_2_name') }}</h3>
                 <p class="text-base leading-7 text-indigo-400">{{ __('about-us.team_member_2_title') }}</p>
                  <p class="text-sm leading-6 text-gray-400">{{ __('about-us.team_member_2_bio') }}</p>
             </li>
             <li>
-                <img class="aspect-[3/4] w-full rounded-2xl object-cover" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <img class="aspect-[3/4] w-full rounded-2xl object-cover" src="https://via.placeholder.com/600x800.png/1F2937/FFFFFF?text=?" alt="Placeholder image for a team member">
                 <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">{{ __('about-us.team_member_3_name') }}</h3>
                 <p class="text-base leading-7 text-indigo-400">{{ __('about-us.team_member_3_title') }}</p>
                  <p class="text-sm leading-6 text-gray-400">{{ __('about-us.team_member_3_bio') }}</p>
             </li>
             <li>
-                <img class="aspect-[3/4] w-full rounded-2xl object-cover" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <img class="aspect-[3/4] w-full rounded-2xl object-cover" src="https://via.placeholder.com/600x800.png/1F2937/FFFFFF?text=?" alt="Placeholder image for a team member">
                 <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">{{ __('about-us.team_member_4_name') }}</h3>
                 <p class="text-base leading-7 text-indigo-400">{{ __('about-us.team_member_4_title') }}</p>
                 <p class="text-sm leading-6 text-gray-400">{{ __('about-us.team_member_4_bio') }}</p>
