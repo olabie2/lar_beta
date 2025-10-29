@@ -68,7 +68,7 @@
 
     <div class="relative bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white">
         
-        <!-- Hero Section - Original (UNCHANGED) -->
+        <!-- Hero Section -->
         <div class="relative flex items-center justify-center min-h-[calc(100vh-80px)] p-4 sm:p-6 lg:p-8">
             <div class="max-w-4xl text-center">
                 
@@ -102,19 +102,19 @@
                 <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
                     <div class="scroll-reveal delay-1 text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-indigo-500/20 hover:border-indigo-500/50 transition-all duration-300 hover:scale-105">
                         <div class="text-5xl font-black bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">500+</div>
-                        <p class="mt-2 text-gray-400 font-medium">Projects Delivered</p>
+                        <p class="mt-2 text-gray-400 font-medium">{{ __('messages.home.stats.projects') }}</p>
                     </div>
                     <div class="scroll-reveal delay-2 text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-indigo-500/20 hover:border-indigo-500/50 transition-all duration-300 hover:scale-105">
                         <div class="text-5xl font-black bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">200+</div>
-                        <p class="mt-2 text-gray-400 font-medium">Happy Clients</p>
+                        <p class="mt-2 text-gray-400 font-medium">{{ __('messages.home.stats.clients') }}</p>
                     </div>
                     <div class="scroll-reveal delay-3 text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-indigo-500/20 hover:border-indigo-500/50 transition-all duration-300 hover:scale-105">
                         <div class="text-5xl font-black bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">50+</div>
-                        <p class="mt-2 text-gray-400 font-medium">AI Agents Deployed</p>
+                        <p class="mt-2 text-gray-400 font-medium">{{ __('messages.home.stats.agents') }}</p>
                     </div>
                     <div class="scroll-reveal delay-4 text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-indigo-500/20 hover:border-indigo-500/50 transition-all duration-300 hover:scale-105">
                         <div class="text-5xl font-black bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">24/7</div>
-                        <p class="mt-2 text-gray-400 font-medium">Support Available</p>
+                        <p class="mt-2 text-gray-400 font-medium">{{ __('messages.home.stats.support') }}</p>
                     </div>
                 </div>
             </div>
@@ -125,10 +125,10 @@
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-16 scroll-reveal">
                     <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-6">
-                        Our Core Services
+                        {{ __('messages.home.services.title') }}
                     </h2>
                     <p class="text-xl text-gray-400 max-w-3xl mx-auto">
-                        Comprehensive solutions for your business transformation
+                        {{ __('messages.home.services.tagline') }}
                     </p>
                 </div>
 
@@ -139,17 +139,17 @@
                         <div class="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center text-3xl floating">
                             🤖
                         </div>
-                        <h3 class="text-2xl font-bold text-white mb-4 mt-4">AI Agents & Automation</h3>
+                        <h3 class="text-2xl font-bold text-white mb-4 mt-4">{{ __('messages.home.services.ai_agents.title') }}</h3>
                         <p class="text-gray-400 mb-6 leading-relaxed">
-                            Intelligent automation solutions that work 24/7 to streamline your business operations and boost productivity.
+                            {{ __('messages.home.services.ai_agents.desc') }}
                         </p>
                         <ul class="space-y-2 mb-6 text-gray-300">
-                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> Email Management</li>
-                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> Calendar Scheduling</li>
-                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> Task Automation</li>
+                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> {{ __('messages.home.services.ai_agents.feat1') }}</li>
+                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> {{ __('messages.home.services.ai_agents.feat2') }}</li>
+                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> {{ __('messages.home.services.ai_agents.feat3') }}</li>
                         </ul>
                         <a href="{{route('ai-agents')}}" class="inline-flex items-center text-indigo-400 hover:text-indigo-300 font-semibold group-hover:gap-3 transition-all duration-300">
-                            Learn More <span class="ml-2">→</span>
+                            {{ __('messages.home.services.learn_more') }} <span class="ml-2">→</span>
                         </a>
                     </div>
 
@@ -158,17 +158,17 @@
                         <div class="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center text-3xl floating" style="animation-delay: 0.5s;">
                             💻
                         </div>
-                        <h3 class="text-2xl font-bold text-white mb-4 mt-4">IT Development</h3>
+                        <h3 class="text-2xl font-bold text-white mb-4 mt-4">{{ __('messages.home.services.development.title') }}</h3>
                         <p class="text-gray-400 mb-6 leading-relaxed">
-                            Custom software solutions built with cutting-edge technologies to meet your unique business needs.
+                            {{ __('messages.home.services.development.desc') }}
                         </p>
                         <ul class="space-y-2 mb-6 text-gray-300">
-                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> Web Applications</li>
-                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> Mobile Apps</li>
-                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> Cloud Solutions</li>
+                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> {{ __('messages.home.services.development.feat1') }}</li>
+                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> {{ __('messages.home.services.development.feat2') }}</li>
+                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> {{ __('messages.home.services.development.feat3') }}</li>
                         </ul>
                         <a href="/services" class="inline-flex items-center text-indigo-400 hover:text-indigo-300 font-semibold group-hover:gap-3 transition-all duration-300">
-                            Learn More <span class="ml-2">→</span>
+                            {{ __('messages.home.services.learn_more') }} <span class="ml-2">→</span>
                         </a>
                     </div>
 
@@ -177,17 +177,17 @@
                         <div class="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center text-3xl floating" style="animation-delay: 1s;">
                             📊
                         </div>
-                        <h3 class="text-2xl font-bold text-white mb-4 mt-4">Business Consulting</h3>
+                        <h3 class="text-2xl font-bold text-white mb-4 mt-4">{{ __('messages.home.services.consulting.title') }}</h3>
                         <p class="text-gray-400 mb-6 leading-relaxed">
-                            Strategic guidance to transform your business and achieve sustainable growth in the digital age.
+                            {{ __('messages.home.services.consulting.desc') }}
                         </p>
                         <ul class="space-y-2 mb-6 text-gray-300">
-                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> Digital Strategy</li>
-                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> Process Optimization</li>
-                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> Change Management</li>
+                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> {{ __('messages.home.services.consulting.feat1') }}</li>
+                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> {{ __('messages.home.services.consulting.feat2') }}</li>
+                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> {{ __('messages.home.services.consulting.feat3') }}</li>
                         </ul>
                         <a href="/services" class="inline-flex items-center text-indigo-400 hover:text-indigo-300 font-semibold group-hover:gap-3 transition-all duration-300">
-                            Learn More <span class="ml-2">→</span>
+                            {{ __('messages.home.services.learn_more') }} <span class="ml-2">→</span>
                         </a>
                     </div>
 
@@ -196,17 +196,17 @@
                         <div class="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center text-3xl floating" style="animation-delay: 1.5s;">
                             🎓
                         </div>
-                        <h3 class="text-2xl font-bold text-white mb-4 mt-4">Education & Training</h3>
+                        <h3 class="text-2xl font-bold text-white mb-4 mt-4">{{ __('messages.home.services.education.title') }}</h3>
                         <p class="text-gray-400 mb-6 leading-relaxed">
-                            Comprehensive learning programs and LMS solutions to empower your team with future-ready skills.
+                            {{ __('messages.home.services.education.desc') }}
                         </p>
                         <ul class="space-y-2 mb-6 text-gray-300">
-                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> Corporate Training</li>
-                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> Bootcamps</li>
-                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> LMS Platforms</li>
+                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> {{ __('messages.home.services.education.feat1') }}</li>
+                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> {{ __('messages.home.services.education.feat2') }}</li>
+                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> {{ __('messages.home.services.education.feat3') }}</li>
                         </ul>
                         <a href="/services" class="inline-flex items-center text-indigo-400 hover:text-indigo-300 font-semibold group-hover:gap-3 transition-all duration-300">
-                            Learn More <span class="ml-2">→</span>
+                            {{ __('messages.home.services.learn_more') }} <span class="ml-2">→</span>
                         </a>
                     </div>
 
@@ -215,17 +215,17 @@
                         <div class="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center text-3xl floating" style="animation-delay: 2s;">
                             🎪
                         </div>
-                        <h3 class="text-2xl font-bold text-white mb-4 mt-4">Event Management</h3>
+                        <h3 class="text-2xl font-bold text-white mb-4 mt-4">{{ __('messages.home.services.events.title') }}</h3>
                         <p class="text-gray-400 mb-6 leading-relaxed">
-                            End-to-end event solutions from planning to execution, creating memorable experiences for your audience.
+                            {{ __('messages.home.services.events.desc') }}
                         </p>
                         <ul class="space-y-2 mb-6 text-gray-300">
-                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> Hybrid Events</li>
-                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> Ticketing Systems</li>
-                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> Virtual Platforms</li>
+                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> {{ __('messages.home.services.events.feat1') }}</li>
+                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> {{ __('messages.home.services.events.feat2') }}</li>
+                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> {{ __('messages.home.services.events.feat3') }}</li>
                         </ul>
                         <a href="/services" class="inline-flex items-center text-indigo-400 hover:text-indigo-300 font-semibold group-hover:gap-3 transition-all duration-300">
-                            Learn More <span class="ml-2">→</span>
+                            {{ __('messages.home.services.learn_more') }} <span class="ml-2">→</span>
                         </a>
                     </div>
 
@@ -234,17 +234,17 @@
                         <div class="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center text-3xl floating" style="animation-delay: 2.5s;">
                             🏢
                         </div>
-                        <h3 class="text-2xl font-bold text-white mb-4 mt-4">Smart Real Estate</h3>
+                        <h3 class="text-2xl font-bold text-white mb-4 mt-4">{{ __('messages.home.services.real_estate.title') }}</h3>
                         <p class="text-gray-400 mb-6 leading-relaxed">
-                            Innovative technology solutions for modern real estate management and sustainable property development.
+                            {{ __('messages.home.services.real_estate.desc') }}
                         </p>
                         <ul class="space-y-2 mb-6 text-gray-300">
-                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> Property Management</li>
-                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> IoT Integration</li>
-                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> Sustainability</li>
+                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> {{ __('messages.home.services.real_estate.feat1') }}</li>
+                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> {{ __('messages.home.services.real_estate.feat2') }}</li>
+                            <li class="flex items-center"><span class="mr-2 text-indigo-400">✓</span> {{ __('messages.home.services.real_estate.feat3') }}</li>
                         </ul>
                         <a href="/services" class="inline-flex items-center text-indigo-400 hover:text-indigo-300 font-semibold group-hover:gap-3 transition-all duration-300">
-                            Learn More <span class="ml-2">→</span>
+                            {{ __('messages.home.services.learn_more') }} <span class="ml-2">→</span>
                         </a>
                     </div>
 
@@ -257,10 +257,10 @@
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-16 scroll-reveal">
                     <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent mb-6">
-                        Why Choose HOPn?
+                        {{ __('messages.home.why_choose_us.title') }}
                     </h2>
                     <p class="text-xl text-gray-400 max-w-3xl mx-auto">
-                        Innovation-driven solutions backed by expertise and dedication
+                        {{ __('messages.home.why_choose_us.tagline') }}
                     </p>
                 </div>
 
@@ -271,9 +271,9 @@
                             ⚡
                         </div>
                         <div>
-                            <h3 class="text-2xl font-bold text-white mb-3">Fast Delivery</h3>
+                            <h3 class="text-2xl font-bold text-white mb-3">{{ __('messages.home.why_choose_us.fast_delivery.title') }}</h3>
                             <p class="text-gray-400 leading-relaxed">
-                                Agile methodologies ensure rapid deployment without compromising quality or security standards.
+                                {{ __('messages.home.why_choose_us.fast_delivery.desc') }}
                             </p>
                         </div>
                     </div>
@@ -283,9 +283,9 @@
                             🎯
                         </div>
                         <div>
-                            <h3 class="text-2xl font-bold text-white mb-3">Tailored Solutions</h3>
+                            <h3 class="text-2xl font-bold text-white mb-3">{{ __('messages.home.why_choose_us.tailored_solutions.title') }}</h3>
                             <p class="text-gray-400 leading-relaxed">
-                                Custom-built solutions designed specifically for your business needs and industry requirements.
+                                {{ __('messages.home.why_choose_us.tailored_solutions.desc') }}
                             </p>
                         </div>
                     </div>
@@ -295,9 +295,9 @@
                             🛡️
                         </div>
                         <div>
-                            <h3 class="text-2xl font-bold text-white mb-3">Enterprise Security</h3>
+                            <h3 class="text-2xl font-bold text-white mb-3">{{ __('messages.home.why_choose_us.security.title') }}</h3>
                             <p class="text-gray-400 leading-relaxed">
-                                Bank-level security protocols and GDPR compliance to protect your valuable business data.
+                                {{ __('messages.home.why_choose_us.security.desc') }}
                             </p>
                         </div>
                     </div>
@@ -307,9 +307,9 @@
                             🤝
                         </div>
                         <div>
-                            <h3 class="text-2xl font-bold text-white mb-3">24/7 Support</h3>
+                            <h3 class="text-2xl font-bold text-white mb-3">{{ __('messages.home.why_choose_us.support.title') }}</h3>
                             <p class="text-gray-400 leading-relaxed">
-                                Dedicated support team available round the clock to ensure your operations run smoothly.
+                                {{ __('messages.home.why_choose_us.support.desc') }}
                             </p>
                         </div>
                     </div>
@@ -323,10 +323,10 @@
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-16 scroll-reveal">
                     <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-6">
-                        Featured Projects
+                        {{ __('messages.home.projects.title') }}
                     </h2>
                     <p class="text-xl text-gray-400 max-w-3xl mx-auto">
-                        Innovation in action - see what we've built for our clients
+                        {{ __('messages.home.projects.tagline') }}
                     </p>
                 </div>
 
@@ -335,12 +335,12 @@
                     <div class="scroll-reveal delay-1 group relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-900/60 to-purple-900/60 backdrop-blur-sm border border-indigo-500/30 hover:border-indigo-400/60 transition-all duration-500 hover:scale-105">
                         <div class="p-8">
                             <div class="text-5xl mb-4">🧾</div>
-                            <h3 class="text-2xl font-bold text-white mb-3">Invoice AI</h3>
+                            <h3 class="text-2xl font-bold text-white mb-3">{{ __('messages.home.projects.invoice_ai.title') }}</h3>
                             <p class="text-gray-400 mb-4">
-                                Intelligent invoice processing with AI-powered data extraction and automated workflows.
+                                {{ __('messages.home.projects.invoice_ai.desc') }}
                             </p>
                             <a href="/projects" class="inline-flex items-center text-indigo-400 hover:text-indigo-300 font-semibold">
-                                View Project <span class="ml-2">→</span>
+                                {{ __('messages.home.projects.view_project') }} <span class="ml-2">→</span>
                             </a>
                         </div>
                     </div>
@@ -348,12 +348,12 @@
                     <div class="scroll-reveal delay-2 group relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-900/60 to-purple-900/60 backdrop-blur-sm border border-indigo-500/30 hover:border-indigo-400/60 transition-all duration-500 hover:scale-105">
                         <div class="p-8">
                             <div class="text-5xl mb-4">🎫</div>
-                            <h3 class="text-2xl font-bold text-white mb-3">Ticketology</h3>
+                            <h3 class="text-2xl font-bold text-white mb-3">{{ __('messages.home.projects.ticketology.title') }}</h3>
                             <p class="text-gray-400 mb-4">
-                                Next-generation ticketing platform for events with seamless booking and management.
+                                {{ __('messages.home.projects.ticketology.desc') }}
                             </p>
                             <a href="/projects" class="inline-flex items-center text-indigo-400 hover:text-indigo-300 font-semibold">
-                                View Project <span class="ml-2">→</span>
+                                {{ __('messages.home.projects.view_project') }} <span class="ml-2">→</span>
                             </a>
                         </div>
                     </div>
@@ -361,12 +361,12 @@
                     <div class="scroll-reveal delay-3 group relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-900/60 to-purple-900/60 backdrop-blur-sm border border-indigo-500/30 hover:border-indigo-400/60 transition-all duration-500 hover:scale-105">
                         <div class="p-8">
                             <div class="text-5xl mb-4">🎓</div>
-                            <h3 class="text-2xl font-bold text-white mb-3">EduBridge</h3>
+                            <h3 class="text-2xl font-bold text-white mb-3">{{ __('messages.home.projects.edubridge.title') }}</h3>
                             <p class="text-gray-400 mb-4">
-                                Comprehensive LMS platform connecting educators and learners worldwide.
+                                {{ __('messages.home.projects.edubridge.desc') }}
                             </p>
                             <a href="/projects" class="inline-flex items-center text-indigo-400 hover:text-indigo-300 font-semibold">
-                                View Project <span class="ml-2">→</span>
+                                {{ __('messages.home.projects.view_project') }} <span class="ml-2">→</span>
                             </a>
                         </div>
                     </div>
@@ -380,10 +380,10 @@
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-16 scroll-reveal">
                     <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent mb-6">
-                        What Our Clients Say
+                        {{ __('messages.home.testimonials.title') }}
                     </h2>
                     <p class="text-xl text-gray-400 max-w-3xl mx-auto">
-                        Trusted by businesses across industries
+                        {{ __('messages.home.testimonials.tagline') }}
                     </p>
                 </div>
 
@@ -396,15 +396,15 @@
                             </div>
                         </div>
                         <p class="text-gray-300 mb-6 leading-relaxed italic">
-                            "HOPn transformed our business operations with their AI automation. We've seen a 60% increase in efficiency and our team can now focus on strategic work."
+                            "{{ __('messages.home.testimonials.client1.quote') }}"
                         </p>
                         <div class="flex items-center">
                             <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
                                 MK
                             </div>
                             <div>
-                                <p class="text-white font-semibold">Michael Klein</p>
-                                <p class="text-gray-400 text-sm">CEO, TechVenture GmbH</p>
+                                <p class="text-white font-semibold">{{ __('messages.home.testimonials.client1.name') }}</p>
+                                <p class="text-gray-400 text-sm">{{ __('messages.home.testimonials.client1.title') }}</p>
                             </div>
                         </div>
                     </div>
@@ -416,15 +416,15 @@
                             </div>
                         </div>
                         <p class="text-gray-300 mb-6 leading-relaxed italic">
-                            "The LMS platform they built for us is exceptional. Our training programs reach thousands of employees seamlessly. Outstanding work!"
+                            "{{ __('messages.home.testimonials.client2.quote') }}"
                         </p>
                         <div class="flex items-center">
                             <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
                                 SM
                             </div>
                             <div>
-                                <p class="text-white font-semibold">Sarah Mueller</p>
-                                <p class="text-gray-400 text-sm">HR Director, Global Innovations</p>
+                                <p class="text-white font-semibold">{{ __('messages.home.testimonials.client2.name') }}</p>
+                                <p class="text-gray-400 text-sm">{{ __('messages.home.testimonials.client2.title') }}</p>
                             </div>
                         </div>
                     </div>
@@ -436,15 +436,15 @@
                             </div>
                         </div>
                         <p class="text-gray-300 mb-6 leading-relaxed italic">
-                            "Professional, innovative, and reliable. HOPn delivered our event management platform ahead of schedule. Highly recommended!"
+                            "{{ __('messages.home.testimonials.client3.quote') }}"
                         </p>
                         <div class="flex items-center">
                             <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
                                 DW
                             </div>
                             <div>
-                                <p class="text-white font-semibold">David Wagner</p>
-                                <p class="text-gray-400 text-sm">Founder, EventPro Solutions</p>
+                                <p class="text-white font-semibold">{{ __('messages.home.testimonials.client3.name') }}</p>
+                                <p class="text-gray-400 text-sm">{{ __('messages.home.testimonials.client3.title') }}</p>
                             </div>
                         </div>
                     </div>
@@ -458,10 +458,10 @@
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-16 scroll-reveal">
                     <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-6">
-                        Powered by Modern Technology
+                        {{ __('messages.home.tech_stack.title') }}
                     </h2>
                     <p class="text-xl text-gray-400 max-w-3xl mx-auto">
-                        We leverage cutting-edge tools and frameworks to deliver excellence
+                        {{ __('messages.home.tech_stack.tagline') }}
                     </p>
                 </div>
 
@@ -508,17 +508,17 @@
                     <div class="absolute inset-0 bg-gradient-to-r from-indigo-500/10 to-purple-500/10"></div>
                     <div class="relative z-10">
                         <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
-                            Ready to Transform Your Business?
+                            {{ __('messages.home.final_cta.title') }}
                         </h2>
                         <p class="text-xl text-gray-200 mb-10 max-w-3xl mx-auto">
-                            Let's discuss how our innovative solutions can help you achieve your goals and stay ahead of the competition.
+                            {{ __('messages.home.final_cta.tagline') }}
                         </p>
                         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
                             <a href="/request-demo" class="cta-btn secondary text-white bg-gradient-to-br from-white/20 to-white/10 border-2 border-white hover:bg-white/30">
-                                Schedule a Demo
+                                {{ __('messages.home.final_cta.cta_primary') }}
                             </a>
                             <a href="/contact" class="cta-btn primary border-2 border-white text-white hover:bg-white/10">
-                                Contact Us
+                                {{ __('messages.home.final_cta.cta_secondary') }}
                             </a>
                         </div>
                     </div>
