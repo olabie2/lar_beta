@@ -136,9 +136,7 @@
                     
                     <!-- Service Card 1: AI Agents -->
                     <div class="scroll-reveal delay-1 group relative bg-gradient-to-br from-indigo-900/40 to-purple-900/40 backdrop-blur-sm border border-indigo-500/30 rounded-3xl p-8 hover:scale-105 hover:border-indigo-400/60 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-500/20">
-                        <div class="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center text-3xl floating">
-                            🤖
-                        </div>
+             
                         <h3 class="text-2xl font-bold text-white mb-4 mt-4">{{ __('messages.home.services.ai_agents.title') }}</h3>
                         <p class="text-gray-400 mb-6 leading-relaxed">
                             {{ __('messages.home.services.ai_agents.desc') }}
@@ -155,9 +153,7 @@
 
                     <!-- Service Card 2: IT Development -->
                     <div class="scroll-reveal delay-2 group relative bg-gradient-to-br from-indigo-900/40 to-purple-900/40 backdrop-blur-sm border border-indigo-500/30 rounded-3xl p-8 hover:scale-105 hover:border-indigo-400/60 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-500/20">
-                        <div class="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center text-3xl floating" style="animation-delay: 0.5s;">
-                            💻
-                        </div>
+                   
                         <h3 class="text-2xl font-bold text-white mb-4 mt-4">{{ __('messages.home.services.development.title') }}</h3>
                         <p class="text-gray-400 mb-6 leading-relaxed">
                             {{ __('messages.home.services.development.desc') }}
@@ -174,9 +170,7 @@
 
                     <!-- Service Card 3: Business Consulting -->
                     <div class="scroll-reveal delay-3 group relative bg-gradient-to-br from-indigo-900/40 to-purple-900/40 backdrop-blur-sm border border-indigo-500/30 rounded-3xl p-8 hover:scale-105 hover:border-indigo-400/60 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-500/20">
-                        <div class="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center text-3xl floating" style="animation-delay: 1s;">
-                            📊
-                        </div>
+                      
                         <h3 class="text-2xl font-bold text-white mb-4 mt-4">{{ __('messages.home.services.consulting.title') }}</h3>
                         <p class="text-gray-400 mb-6 leading-relaxed">
                             {{ __('messages.home.services.consulting.desc') }}
@@ -193,9 +187,7 @@
 
                     <!-- Service Card 4: Education & Training -->
                     <div class="scroll-reveal delay-4 group relative bg-gradient-to-br from-indigo-900/40 to-purple-900/40 backdrop-blur-sm border border-indigo-500/30 rounded-3xl p-8 hover:scale-105 hover:border-indigo-400/60 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-500/20">
-                        <div class="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center text-3xl floating" style="animation-delay: 1.5s;">
-                            🎓
-                        </div>
+                     
                         <h3 class="text-2xl font-bold text-white mb-4 mt-4">{{ __('messages.home.services.education.title') }}</h3>
                         <p class="text-gray-400 mb-6 leading-relaxed">
                             {{ __('messages.home.services.education.desc') }}
@@ -212,9 +204,7 @@
 
                     <!-- Service Card 5: Event Management -->
                     <div class="scroll-reveal delay-5 group relative bg-gradient-to-br from-indigo-900/40 to-purple-900/40 backdrop-blur-sm border border-indigo-500/30 rounded-3xl p-8 hover:scale-105 hover:border-indigo-400/60 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-500/20">
-                        <div class="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center text-3xl floating" style="animation-delay: 2s;">
-                            🎪
-                        </div>
+                       
                         <h3 class="text-2xl font-bold text-white mb-4 mt-4">{{ __('messages.home.services.events.title') }}</h3>
                         <p class="text-gray-400 mb-6 leading-relaxed">
                             {{ __('messages.home.services.events.desc') }}
@@ -231,9 +221,7 @@
 
                     <!-- Service Card 6: Smart Real Estate -->
                     <div class="scroll-reveal delay-6 group relative bg-gradient-to-br from-indigo-900/40 to-purple-900/40 backdrop-blur-sm border border-indigo-500/30 rounded-3xl p-8 hover:scale-105 hover:border-indigo-400/60 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-500/20">
-                        <div class="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center text-3xl floating" style="animation-delay: 2.5s;">
-                            🏢
-                        </div>
+                        
                         <h3 class="text-2xl font-bold text-white mb-4 mt-4">{{ __('messages.home.services.real_estate.title') }}</h3>
                         <p class="text-gray-400 mb-6 leading-relaxed">
                             {{ __('messages.home.services.real_estate.desc') }}
