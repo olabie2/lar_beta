@@ -55,8 +55,42 @@ Route::group(
 
 
         // Admin Dashboard Routes
-        Route::middleware(['auth', 'admin'])->group(function () {
-            Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
+        Route::middleware(['auth', 'admin'])->prefix('dashboard')->group(function () {
+            Route::get('/', [\App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
+            
+            // Projects Management
+            Route::get('/projects', [\App\Http\Controllers\Admin\AdminProjectController::class, 'index'])->name('admin.projects.index');
+            Route::get('/projects/create', [\App\Http\Controllers\Admin\AdminProjectController::class, 'create'])->name('admin.projects.create');
+            Route::post('/projects', [\App\Http\Controllers\Admin\AdminProjectController::class, 'store'])->name('admin.projects.store');
+            Route::get('/projects/{project}/edit', [\App\Http\Controllers\Admin\AdminProjectController::class, 'edit'])->name('admin.projects.edit');
+            Route::put('/projects/{project}', [\App\Http\Controllers\Admin\AdminProjectController::class, 'update'])->name('admin.projects.update');
+            Route::delete('/projects/{project}', [\App\Http\Controllers\Admin\AdminProjectController::class, 'destroy'])->name('admin.projects.destroy');
+            
+            // Careers Management
+            Route::get('/careers', [\App\Http\Controllers\Admin\AdminCareerController::class, 'index'])->name('admin.careers.index');
+            Route::get('/careers/create', [\App\Http\Controllers\Admin\AdminCareerController::class, 'create'])->name('admin.careers.create');
+            Route::post('/careers', [\App\Http\Controllers\Admin\AdminCareerController::class, 'store'])->name('admin.careers.store');
+            Route::get('/careers/{career}/edit', [\App\Http\Controllers\Admin\AdminCareerController::class, 'edit'])->name('admin.careers.edit');
+            Route::put('/careers/{career}', [\App\Http\Controllers\Admin\AdminCareerController::class, 'update'])->name('admin.careers.update');
+            Route::delete('/careers/{career}', [\App\Http\Controllers\Admin\AdminCareerController::class, 'destroy'])->name('admin.careers.destroy');
+            
+            // Events Management
+            Route::get('/events', [\App\Http\Controllers\Admin\AdminEventController::class, 'index'])->name('admin.events.index');
+            Route::get('/events/create', [\App\Http\Controllers\Admin\AdminEventController::class, 'create'])->name('admin.events.create');
+            Route::post('/events', [\App\Http\Controllers\Admin\AdminEventController::class, 'store'])->name('admin.events.store');
+            Route::get('/events/{event}/edit', [\App\Http\Controllers\Admin\AdminEventController::class, 'edit'])->name('admin.events.edit');
+            Route::put('/events/{event}', [\App\Http\Controllers\Admin\AdminEventController::class, 'update'])->name('admin.events.update');
+            Route::delete('/events/{event}', [\App\Http\Controllers\Admin\AdminEventController::class, 'destroy'])->name('admin.events.destroy');
+            
+            // Applications View
+            Route::get('/applications', [\App\Http\Controllers\Admin\AdminApplicationController::class, 'index'])->name('admin.applications.index');
+            Route::get('/applications/{application}', [\App\Http\Controllers\Admin\AdminApplicationController::class, 'show'])->name('admin.applications.show');
+            Route::delete('/applications/{application}', [\App\Http\Controllers\Admin\AdminApplicationController::class, 'destroy'])->name('admin.applications.destroy');
+            
+            // Demo Requests View
+            Route::get('/demos', [\App\Http\Controllers\Admin\AdminDemoController::class, 'index'])->name('admin.demos.index');
+            Route::get('/demos/{demo}', [\App\Http\Controllers\Admin\AdminDemoController::class, 'show'])->name('admin.demos.show');
+            Route::delete('/demos/{demo}', [\App\Http\Controllers\Admin\AdminDemoController::class, 'destroy'])->name('admin.demos.destroy');
         });
     }
 );

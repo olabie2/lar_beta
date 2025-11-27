@@ -32,13 +32,13 @@
                 <div class="pt-4 pb-2">
                     <p class="px-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">Projects</p>
                 </div>
-                <a href="#" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-700/50 hover:text-white rounded-lg transition-all duration-200 group">
+                <a href="{{ route('admin.projects.create') }}" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-700/50 hover:text-white rounded-lg transition-all duration-200 group">
                     <svg class="w-5 h-5 mr-3 text-green-400 group-hover:text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
                     </svg>
                     <span class="font-medium">Add Project</span>
                 </a>
-                <a href="#" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-700/50 hover:text-white rounded-lg transition-all duration-200 group">
+                <a href="{{ route('admin.projects.index') }}" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-700/50 hover:text-white rounded-lg transition-all duration-200 group">
                     <svg class="w-5 h-5 mr-3 text-blue-400 group-hover:text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
                     </svg>
@@ -49,13 +49,13 @@
                 <div class="pt-4 pb-2">
                     <p class="px-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">Careers</p>
                 </div>
-                <a href="#" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-700/50 hover:text-white rounded-lg transition-all duration-200 group">
+                <a href="{{ route('admin.careers.create') }}" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-700/50 hover:text-white rounded-lg transition-all duration-200 group">
                     <svg class="w-5 h-5 mr-3 text-green-400 group-hover:text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
                     </svg>
                     <span class="font-medium">Add Career</span>
                 </a>
-                <a href="#" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-700/50 hover:text-white rounded-lg transition-all duration-200 group">
+                <a href="{{ route('admin.careers.index') }}" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-700/50 hover:text-white rounded-lg transition-all duration-200 group">
                     <svg class="w-5 h-5 mr-3 text-blue-400 group-hover:text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                     </svg>
@@ -66,13 +66,13 @@
                 <div class="pt-4 pb-2">
                     <p class="px-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">Events</p>
                 </div>
-                <a href="#" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-700/50 hover:text-white rounded-lg transition-all duration-200 group">
+                <a href="{{ route('admin.events.create') }}" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-700/50 hover:text-white rounded-lg transition-all duration-200 group">
                     <svg class="w-5 h-5 mr-3 text-green-400 group-hover:text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
                     </svg>
                     <span class="font-medium">Add Event</span>
                 </a>
-                <a href="#" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-700/50 hover:text-white rounded-lg transition-all duration-200 group">
+                <a href="{{ route('admin.events.index') }}" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-700/50 hover:text-white rounded-lg transition-all duration-200 group">
                     <svg class="w-5 h-5 mr-3 text-purple-400 group-hover:text-purple-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                     </svg>
@@ -83,7 +83,7 @@
                 <div class="pt-4 pb-2">
                     <p class="px-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">Applications</p>
                 </div>
-                <a href="#" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-700/50 hover:text-white rounded-lg transition-all duration-200 group">
+                <a href="{{ route('admin.applications.index') }}" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-700/50 hover:text-white rounded-lg transition-all duration-200 group">
                     <svg class="w-5 h-5 mr-3 text-yellow-400 group-hover:text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                     </svg>
@@ -92,7 +92,7 @@
                         <span class="ml-auto bg-yellow-500/20 text-yellow-400 text-xs font-bold px-2 py-1 rounded-full">{{ \App\Models\JobApplication::count() }}</span>
                     @endif
                 </a>
-                <a href="#" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-700/50 hover:text-white rounded-lg transition-all duration-200 group">
+                <a href="{{ route('admin.demos.index') }}" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-700/50 hover:text-white rounded-lg transition-all duration-200 group">
                     <svg class="w-5 h-5 mr-3 text-pink-400 group-hover:text-pink-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"></path>
                     </svg>
