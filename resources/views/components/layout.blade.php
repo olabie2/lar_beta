@@ -11,6 +11,8 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     
+    @stack('styles')
+    
 </head>
 
 <body class="bg-bg-dark text-text-primary font-sans antialiased overflow-x-hidden">
@@ -29,13 +31,14 @@
             {{ $slot }}
         </main>
 
-        <!-- Footer (You can create a x-footer component similarly) -->
+        <!-- Footer (You can create a x-footer component similarly) -->>
         {{-- <footer class="bg-black/30 border-t border-glass-border text-center p-8 mt-auto">
             <p class="text-text-secondary">&copy; {{ date('Y') }} HOPn. {{ __('messages.footer.rights_reserved') }}</p>
         </footer> --}}
         <x-footer/>
     </div>
 
+    @stack('scripts')
   
 </body>
 </html>
