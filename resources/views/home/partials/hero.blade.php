@@ -5,25 +5,25 @@
     
     <!-- Hero Content -->
     <div class="max-w-4xl text-center relative z-10">
-        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight animate-glow bg-gradient-to-r from-primary-light via-accent-purple to-accent-pink bg-clip-text text-transparent">
+        <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight animate-glow bg-gradient-to-r from-primary-light via-accent-purple to-accent-pink bg-clip-text text-transparent">
             {{ __('messages.home.hero.title') }}
         </h1>
         
-        <p class="mt-6 text-xl sm:text-2xl text-text-secondary animate-[fade-in-up_1s_ease-out_0.3s_both]">
+        <p class="mt-4 sm:mt-6 text-lg sm:text-xl md:text-2xl text-text-secondary animate-[fade-in-up_1s_ease-out_0.3s_both]">
             {{ __('messages.home.hero.tagline') }}
         </p>
 
-        <p class="mt-4 max-w-2xl mx-auto text-lg text-text-secondary/80 animate-[fade-in-up_1s_ease-out_0.6s_both]">
+        <p class="mt-3 sm:mt-4 max-w-2xl mx-auto text-base sm:text-lg text-text-secondary/80 animate-[fade-in-up_1s_ease-out_0.6s_both]">
             {{ __('messages.home.hero.description') }}
         </p>
 
-        <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 animate-[fade-in-up_1s_ease-out_0.9s_both]">
-            <a href="{{route('ai-agents')}}" class="cta-btn primary bg-[#ffffff1a]">
+        <div class="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 animate-[fade-in-up_1s_ease-out_0.9s_both]">
+            <x-button-primary :href="route('ai-agents')" class="w-full sm:w-auto">
                 {{ __('messages.home.hero.cta_primary') }}
-            </a>
-            <a href="/request-demo" class="cta-btn secondary text-white bg-gradient-to-br from-indigo-600 to-purple-600">
+            </x-button-primary>
+            <x-button-secondary href="/request-demo" class="w-full sm:w-auto">
                 {{ __('messages.home.hero.cta_secondary') }}
-            </a>
+            </x-button-secondary>
         </div>
     </div>
 </div>
