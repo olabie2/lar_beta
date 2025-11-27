@@ -14,6 +14,7 @@ use App\Http\Controllers\JobApplicationController;
 use App\Http\Controllers\AiAgentsController;
 use App\Http\Controllers\EducationController;
 use App\Http\Controllers\ServicesController;
+use App\Http\Controllers\ProjectController;
 Route::group(
     [
         'prefix' => LaravelLocalization::setLocale(),
@@ -44,6 +45,8 @@ Route::group(
         // Route::get('/education',[EducationController::class,'index'])->name('education.index');
         // Route::get('/blog/create',[BlogController::class, 'create'])->name('blog.create');
         Route::get('/services',[ServicesController::class,'index'])->name('services.index');
+        Route::get('/projects', [ProjectController::class, 'index'])->name('projects.index');
+        Route::get('/projects/{project}', [ProjectController::class, 'show'])->name('projects.show');
     }
 );
 Route::post('/careers/{career}/apply', [JobApplicationController::class, 'store'])->name('careers.apply');
