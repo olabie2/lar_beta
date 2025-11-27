@@ -31,7 +31,7 @@ Route::group(
         Route::get('/request-demo', [DemoController::class, 'index'])->name('request-demo');
         Route::get('/careers', [CareersController::class, 'index'])->name('careers.index');
         Route::get('/careers/{career}', [CareersController::class, 'show'])->name('careers.show');
-        // Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
+        Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
         Route::get('/blog',[BlogController::class, 'index'])->name('blog.index');
         Route::get('/blog/{blog:slug}', [BlogController::class, 'show'])->name('blog.show');
 
@@ -47,6 +47,17 @@ Route::group(
         Route::get('/services',[ServicesController::class,'index'])->name('services.index');
         Route::get('/projects', [ProjectController::class, 'index'])->name('projects.index');
         Route::get('/projects/{project}', [ProjectController::class, 'show'])->name('projects.show');
+
+        // Authentication Routes
+        Route::get('/login', [\App\Http\Controllers\Auth\LoginController::class, 'showLoginForm'])->name('login');
+        Route::post('/login', [\App\Http\Controllers\Auth\LoginController::class, 'login'])->name('login.submit');
+        Route::post('/logout', [\App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
+
+
+        // Admin Dashboard Routes
+        Route::middleware(['auth', 'admin'])->group(function () {
+            Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
+        });
     }
 );
 Route::post('/careers/{career}/apply', [JobApplicationController::class, 'store'])->name('careers.apply');
