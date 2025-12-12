@@ -41,6 +41,7 @@
                     <li><a href="#" class="text-text-secondary hover:text-primary-light transition-colors">{{ __('footer.cookie_policy') }}</a></li>
                     <li><a href="/privacy-policy" class="text-text-secondary hover:text-primary-light transition-colors">{{ __('footer.privacy_policy') }}</a></li>
                     <li><a href="#" class="text-text-secondary hover:text-primary-light transition-colors">{{ __('footer.terms_of_service') }}</a></li>
+                    <li><a href="{{ route('impressum') }}" class="text-text-secondary hover:text-primary-light transition-colors">Impressum</a></li>
                 </ul>
             </div>
 
