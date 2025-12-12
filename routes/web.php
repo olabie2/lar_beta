@@ -100,3 +100,7 @@ Route::post('/request-demo', [DemoController::class, 'store'])->name('request-de
 Route::get('/privacy-policy', function () {
     return view('privacy-policy');
 })->name('privacy.policy');
+
+Route::get('/impressum', function () {
+    return view('legal.impressum');
+})->name('impressum');

@@ -30,30 +30,44 @@
                     
                     <h2>Angaben gemäß § 5 TMG</h2>
                     <p>
-                        Max Mustermann <br>
-                        Musterstraße 111 <br>
-                        Gebäude 4 <br>
-                        90210 Musterstadt
+                        HOPN UG (haftungsbeschränkt) <br>
+                        Weichter Straße 1 <br>
+                        86807 Buchloe <br>
+                        Deutschland
+                    </p>
+
+                    <h2>Vertreten durch den Geschäftsführer</h2>
+                    <p>
+                        Prof. Dr.-Ing. Ahmed Ebada
                     </p>
 
                     <h2>Kontakt</h2>
                     <p>
-                        Telefon: +49 (0) 123 44 55 66 <br>
-                        Telefax: +49 (0) 123 44 55 99 <br>
-                        E-Mail: mustermann@muster.de
+                        E-Mail: <a href="mailto:info@hopn.eu">info@hopn.eu</a> <br>
+                        Telefon: <a href="tel:+491794170592">+49 179 4170592</a> <br>
+                        Website: <a href="https://www.hopn.eu" target="_blank" rel="noopener noreferrer">www.hopn.eu</a>
                     </p>
 
-                    <h2>Umsatzsteuer-ID</h2>
+                    <h2>Registereintrag</h2>
                     <p>
-                        Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: <br>
-                        DE999999999
+                        Eintragung im Handelsregister. <br>
+                        Registergericht: Amtsgericht Kempten (Allgäu) <br>
+                        Registernummer: HRB 17191
                     </p>
 
-                    <h2>Redaktionell verantwortlich</h2>
+                    <h2>Umsatzsteuer-ID gemäß § 27a UStG</h2>
                     <p>
-                        Max Mustermann <br>
-                        Musterstraße 111 <br>
-                        90210 Musterstadt
+                        DE365178670
+                    </p>
+
+                    <h2>Steuernummer</h2>
+                    <p>
+                        125/128/70641
+                    </p>
+
+                    <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+                    <p>
+                        Prof. Dr.-Ing. Ahmed Ebada
                     </p>
 
                     <h2>EU-Streitschlichtung</h2>

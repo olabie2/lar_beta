@@ -5,6 +5,7 @@
         <li><x-dropdown-link-company /></li>
         <li><x-nav-link :href="route('education')" :active="request()->routeIs('education')">{{ __('messages.nav.education') }}</x-nav-link></li>
         <li><x-nav-link :href="route('contact')" :active="request()->routeIs('contact')">{{ __('messages.nav.contact') }}</x-nav-link></li>
+        <li><x-nav-link :href="route('impressum')" :active="request()->routeIs('impressum')">Impressum</x-nav-link></li>
     </ul>
 
     <!-- SHARED DESKTOP DROPDOWN PANEL -->

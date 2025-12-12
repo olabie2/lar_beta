@@ -41,6 +41,7 @@
                 <li><x-dropdown-link-company /></li>
                 <li><x-nav-link :href="route('education')" :active="request()->routeIs('education')">{{ __('messages.nav.education') }}</x-nav-link></li>
                 <li><x-nav-link :href="route('contact')" :active="request()->routeIs('contact')">{{ __('messages.nav.contact') }}</x-nav-link></li>
+                <li><x-nav-link :href="route('impressum')" :active="request()->routeIs('impressum')">Impressum</x-nav-link></li>
             </ul>
 
             <!-- SHARED DESKTOP DROPDOWN PANEL -->
@@ -163,6 +164,7 @@
                                     </div>
                                     <a href="{{ route('education') }}" class="block px-4 py-3 rounded-md text-text-secondary hover:bg-white/10 hover:text-white transition-colors">{{ __('messages.nav.education') }}</a>
                                     <a href="{{ route('contact') }}" class="block px-4 py-3 rounded-md text-text-secondary hover:bg-white/10 hover:text-white transition-colors">{{ __('messages.nav.contact') }}</a>
+                                    <a href="{{ route('impressum') }}" class="block px-4 py-3 rounded-md text-text-secondary hover:bg-white/10 hover:text-white transition-colors">Impressum</a>
                                 </div>
                             </div>
                         </div>
